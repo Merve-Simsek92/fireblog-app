@@ -10,12 +10,14 @@ const AppProvider = ({ children }) => {
     userObserver(setCurrentUser)
   }, [])
   
+ 
 
 
     return (
         <AppContext.Provider
           value={{
 currentUser
+
       
         }}
         >

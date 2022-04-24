@@ -9,6 +9,7 @@ import { ReactComponent as Menuicon} from "../helpers/menu.svg"
 import { ReactComponent as Chat} from "../helpers/chat.svg"
 import { ReactComponent as Heart} from "../helpers/heart.svg"
 import { useNavigate } from 'react-router-dom'
+import "./BlogCard.css"
 
 
 const BlogCard = () => {
@@ -20,18 +21,18 @@ const BlogCard = () => {
      navigate("/details",{state:{item}}) 
     }
   return (
-    <div>
-        {isLoading ? (<img src={loading}/> ) :
+    <div className='cards-div'>
+        {isLoading ? (<img src={loading} style={{textAlign:"center"}} /> ) :
 
    ( blogList?.map((item,index)=>(
 
-<div onClick={()=>handleClick({item})}  key={index} className="card" style={{width: "18rem"}}>
+<div onClick={()=>handleClick({item})}  key={index} className="card">
   <img src={item.image} className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{item.title}</h5>
     <p className="card-text">{item.content.substring(0,50)}...</p>
     <p><Menuicon/> <span> {currentUser.email}  </span></p>
-    <p><span><Heart/></span><Chat/></p>
+    <p><span><Heart className='heart'/></span><span>0</span><Chat className='chat'/><span>0</span></p>
     
   </div>
 </div>

@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react"
 import App from "./firebase"
-import {getDatabase, ref,set,push, onValue} from "firebase/database"
+import {getDatabase, ref,set,push, onValue,update, remove} from "firebase/database"
 import { useBlogGlobalContext } from "../context/BlogContext"
 //bilgi ekleme
 export const AddBlog=(info)=>{
@@ -41,4 +41,16 @@ useEffect(()=>{
 return {isLoading,blogList}
 }
 
+export  const handleDeleteClick=(id)=>{
+    const db=getDatabase()
+    const userRef=ref(db,"blog");
+
+    remove(ref(db,"blog/"+id))
+}
+export const  handleUpdateClick=(info)=>{
+    const db=getDatabase();
+    const updates={};
+    updates["blog/"+info.id]=info;
+    return update(ref(db),updates)
+}
 

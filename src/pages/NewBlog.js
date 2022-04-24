@@ -1,11 +1,12 @@
 import React from 'react'
 import { useBlogGlobalContext } from '../context/BlogContext'
 import { AddBlog } from '../helpers/functions'
-
+import { useNavigate } from 'react-router-dom'
 const NewBlog = () => {
-
+const navigate=useNavigate()
   const {info,setInfo} = useBlogGlobalContext()
 const handleChange=(e)=>{
+  
   e.preventDefault();
   const {name,value}=e.target
   console.log(name,value)
@@ -14,6 +15,7 @@ const handleChange=(e)=>{
 const handleFormSubmit=(e)=>{
 e.preventDefault()
 AddBlog(info)
+navigate("/")
 }
   return (
     <div>

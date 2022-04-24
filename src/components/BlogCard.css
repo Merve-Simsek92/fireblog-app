@@ -1,0 +1,20 @@
+.card-img-top{
+width:200px;
+object-fit: cover;
+}
+.heart{
+    margin-right:20px;
+}
+.chat{
+    margin-right:10px;
+    margin-left:15px;
+}
+.cards-div{
+    
+    
+
+} 
+.card{
+    margin:30px;
+    display:inline-block;
+}
