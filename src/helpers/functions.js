@@ -3,7 +3,9 @@ import { useEffect, useState } from "react"
 import App from "./firebase"
 import {getDatabase, ref,set,push, onValue,update, remove} from "firebase/database"
 import { useBlogGlobalContext } from "../context/BlogContext"
+import { NavItem } from "react-bootstrap"
 //bilgi ekleme
+//import Toastify from "./toast";
 export const AddBlog=(info)=>{
 
  const db=getDatabase()
@@ -46,11 +48,12 @@ export  const handleDeleteClick=(id)=>{
     const userRef=ref(db,"blog");
 
     remove(ref(db,"blog/"+id))
+   // Toastify("Kullanıcı bilgisi silindi")
 }
 export const  handleUpdateClick=(info)=>{
     const db=getDatabase();
     const updates={};
-    updates["blog/"+info.id]=info;
+    updates[ `blog/${info.id}`]=info;
     return update(ref(db),updates)
 }
 

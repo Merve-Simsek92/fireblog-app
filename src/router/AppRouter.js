@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Navbar from "../components/Navbar";
 import NewBlog from "../pages/NewBlog";
 import Details from "../pages/Details";
+import UpdateBlog from "../pages/UpdateBlog";
  
 
 
@@ -22,6 +23,7 @@ const AppRouter = () => {
     <Route path="/register" element={<Register/>} />
     <Route path="/newBlog" element={<NewBlog/>}/>
     <Route path="/details" element={<Details/>}/>
+    <Route path="/updateBlog" element={<UpdateBlog/>}/>
 </Routes>
 
 

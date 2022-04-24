@@ -63,8 +63,9 @@ export const createUser = async (email, password,navigate) => {
           alert(err.message);
         }
       };
-      export const logOut = async (navigate) => {
+      export const logOut =(navigate) => {
         signOut(auth);
+        
         navigate("/login")
      
       };

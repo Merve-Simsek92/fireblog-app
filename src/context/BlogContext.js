@@ -1,5 +1,5 @@
 import React, { useContext, useState,useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+//import { navigate, useNavigate } from "react-router-dom";
 import {createUser, userObserver} from "../helpers/firebase"
  
 
@@ -9,9 +9,8 @@ const AppBlogProvider = ({ children }) => {
  const initialValues={title:"",image:"",content:""}
  const [info,setInfo]=useState(initialValues)
  const [blogList,setBlogList]=useState()
- const handleUpdateClick=(id,title,image,content)=>{
-  setInfo({id,title,image,content})
-}
+//const navigate=useNavigate()
+
     return (
         <AppContext.Provider
           value={{
@@ -19,7 +18,6 @@ const AppBlogProvider = ({ children }) => {
       info,
       setInfo,
       setBlogList,
-      handleUpdateClick,
       blogList
         }}
         >
