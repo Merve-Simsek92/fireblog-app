@@ -5,11 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from './context/AppContext';
+import { AppBlogProvider } from './context/BlogContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <AppProvider><App /></AppProvider>
+     <AppProvider> <AppBlogProvider><App /></AppBlogProvider></AppProvider>
     
   </React.StrictMode>
 );

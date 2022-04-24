@@ -6,13 +6,15 @@ import { ReactComponent as Menuicon} from "../helpers/menu.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullseye } from '@fortawesome/free-solid-svg-icons'
 import { Dropdown } from 'react-bootstrap'
-
+import { useGlobalContext } from '../context/AppContext'
+import { logOut } from "../helpers/firebase";
 const Navbar = () => {
     const navigate=useNavigate()
  const [isOpen,setIsOpen]=useState()
+ const {currentUser}=useGlobalContext()
 
     //const currentUser={displayName:"merve şimşek"}
-    const currentUser=false
+    
     const handleClick=()=>{
 setIsOpen(true)
 
@@ -34,8 +36,8 @@ setIsOpen(true)
 
   <Dropdown.Menu>
     <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">New</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
+    <Dropdown.Item href="/newBlog">New</Dropdown.Item>
+    <Dropdown.Item onClick={()=>logOut()} >Logout</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>) : (
   <Dropdown>

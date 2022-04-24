@@ -4,19 +4,20 @@ import {createUser, userObserver} from "../helpers/firebase"
  
 
 const AppContext = React.createContext();
-const AppProvider = ({ children }) => {
-  const [currentUser,setCurrentUser]=useState()
-  useEffect(() => {
-    userObserver(setCurrentUser)
-  }, [])
-  
+const AppBlogProvider = ({ children }) => {
 
+ const initialValues={title:"",image:"",content:""}
+ const [info,setInfo]=useState(initialValues)
+ const [blogList,setBlogList]=useState()
 
     return (
         <AppContext.Provider
           value={{
-currentUser
-      
+
+      info,
+      setInfo,
+      setBlogList,
+      blogList
         }}
         >
           {children}
@@ -24,8 +25,8 @@ currentUser
       );
 
 }
-export const useGlobalContext = () => {
+export const useBlogGlobalContext = () => {
     return useContext(AppContext);
   };
-  export { AppContext, AppProvider };
+  export { AppContext, AppBlogProvider };
   
