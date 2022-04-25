@@ -5,6 +5,7 @@ import Toastify from "./toast";
 import {getDatabase, ref,set,push, onValue,update, remove} from "firebase/database"
 import { useBlogGlobalContext } from "../context/BlogContext"
 import { NavItem } from "react-bootstrap"
+import { navigate,useNavigate } from "react-router-dom";
 //bilgi ekleme
 //import Toastify from "./toast";
 export const AddBlog=(info)=>{
@@ -45,11 +46,13 @@ return {isLoading,blogList}
 }
 
 export  const handleDeleteClick=(id)=>{
+    const navigate=useNavigate()
     const db=getDatabase()
     const userRef=ref(db,"blog");
 
     remove(ref(db,"blog/"+id))
     Toastify("Kullanıcı bilgisi silindi")
+    navigate("/")
    // Toastify("Kullanıcı bilgisi silindi")
 }
 export const  handleUpdateClick=(info)=>{

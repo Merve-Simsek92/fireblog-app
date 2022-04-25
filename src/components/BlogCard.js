@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useBlogGlobalContext } from '../context/BlogContext'
 import { useFetch } from '../helpers/functions'
 import loading from "../assets/loading.gif"
@@ -9,6 +9,7 @@ import { ReactComponent as Menuicon} from "../helpers/menu.svg"
 import { ReactComponent as Chat} from "../helpers/chat.svg"
 import { ReactComponent as Heart} from "../helpers/heart.svg"
 import { useNavigate } from 'react-router-dom'
+import noData from  "../assets/no-data.png"
 import "./BlogCard.css"
 
 
@@ -16,6 +17,7 @@ const BlogCard = () => {
   const {currentUser}=useGlobalContext()
     const {isLoading,blogList}=useFetch()
     const {info}=useBlogGlobalContext()
+    const [span,setSpan] =useState(0)
     const navigate=useNavigate()
     const handleClick=(item)=>{
       if(currentUser){ 
@@ -28,7 +30,9 @@ const BlogCard = () => {
     }
   return (
     <div className='cards-div'>
-        {isLoading ? (<img src={loading} style={{textAlign:"center"}} /> ) :
+        {isLoading ? (<img  className='load' src={loading} style={{textAlign:"center"}} /> ) :
+
+        blogList === 0  ? (<img src={noData} alt=""/>) :
 
    ( blogList?.map((item,index)=>(
 
@@ -38,7 +42,7 @@ const BlogCard = () => {
     <h5 className="card-title">{item.title}</h5>
     <p className="card-text">{item.content.substring(0,50)}...</p>
     <p><Menuicon/> <span> {currentUser.email}  </span></p>
-    <p><span><Heart className='heart'/></span><span>0</span><Chat className='chat'/><span>0</span></p>
+    <p><span><button onClick={()=>span+1}><Heart className='heart'/></button></span><span>{span}</span><Chat className='chat'/><span>0</span></p>
     
   </div>
 </div>

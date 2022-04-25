@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import {useNavigate } from "react-router-dom";
 import {createUser} from "../helpers/firebase"
+import "./Register.css"
+import blok from "../assets/blok.png"
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -23,10 +25,11 @@ const handleSubmit=(e)=>{
     <div className='text-align-center'>
 
   <div className='register-form'>
+  <img className="blok" src={blok} alt="" /> 
     <h1 className="form-title display-3">Register</h1>
   <form id="register"  onSubmit={handleSubmit}>
 
-  <div className="mb-3">
+  <div className="mb-3 p-4">
             <label htmlFor="email" className="form-label">
               Email
             </label>
@@ -39,7 +42,7 @@ const handleSubmit=(e)=>{
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3 p-4">
             <label htmlFor="password" className="form-label">
               Password
             </label>

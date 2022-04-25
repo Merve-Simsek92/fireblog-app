@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import {useNavigate } from "react-router-dom";
 import { signIn,signUpProvider} from "../helpers/firebase"
+import "./Login.css"
+import logo from "../assets/google.png"
+import blok from "../assets/blok.png"
 const Login = () => {
   
   const [email, setEmail] = useState("");
@@ -20,10 +23,11 @@ const Login = () => {
     <div className='text-align-center'>
 
   <div className='login-form'>
+    <img className="blok" src={blok} alt="" /> 
     <h1 className="form-title display-3">Login</h1>
   <form id="login" onSubmit={handleSubmit}>
 
-  <div className="mb-3">
+  <div className="mb-3 p-4">
             <label htmlFor="email" className="form-label">
               Email
             </label>
@@ -36,7 +40,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3 p-4">
             <label htmlFor="password" className="form-label">
               Password
             </label>
@@ -59,10 +63,10 @@ const Login = () => {
   </form>
 
   <button
-          className="btn btn-primary form-control mt-4"
+          className="btn btn-light form-control mt-4"
           onClick={handleProviderLogin}
         >
-          Continue with Google
+           with  <img src={logo}  alt="" style={{width: "100px"}} />
         </button>
   </div>
  </div>

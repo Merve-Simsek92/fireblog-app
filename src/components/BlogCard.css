@@ -1,5 +1,6 @@
 .card-img-top{
 width:200px;
+height:300px;
 object-fit: cover;
 }
 .heart{
@@ -16,5 +17,10 @@ object-fit: cover;
 } 
 .card{
     margin:30px;
-    display:inline-block;
+    display:inline-block
+}
+.load{
+    width:20%;
+    margin:auto;
+    display: block;
 }

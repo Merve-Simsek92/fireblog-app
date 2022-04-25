@@ -35,7 +35,7 @@ setIsOpen(true)
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
+    <Dropdown.Item href="/profile">Profile</Dropdown.Item>
     <Dropdown.Item href="/newBlog">New</Dropdown.Item>
     <Dropdown.Item onClick={()=>logOut()} >Logout</Dropdown.Item>
   </Dropdown.Menu>
