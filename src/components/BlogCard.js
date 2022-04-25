@@ -18,7 +18,13 @@ const BlogCard = () => {
     const {info}=useBlogGlobalContext()
     const navigate=useNavigate()
     const handleClick=(item)=>{
-     navigate("/details",{state:{item}}) 
+      if(currentUser){ 
+        navigate("/details",{state:{item}}) 
+      }else{
+        navigate("/login")
+      }
+
+    
     }
   return (
     <div className='cards-div'>

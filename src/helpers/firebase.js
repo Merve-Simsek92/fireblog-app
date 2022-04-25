@@ -64,9 +64,11 @@ export const createUser = async (email, password,navigate) => {
         }
       };
       export const logOut =(navigate) => {
-        signOut(auth);
+          signOut(auth);
+          navigate("/login") 
         
-        navigate("/login")
+        
+      
      
       };
       export const userObserver = (setCurrentUser) => {

@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react"
 import App from "./firebase"
+import Toastify from "./toast";
 import {getDatabase, ref,set,push, onValue,update, remove} from "firebase/database"
 import { useBlogGlobalContext } from "../context/BlogContext"
 import { NavItem } from "react-bootstrap"
@@ -48,6 +49,7 @@ export  const handleDeleteClick=(id)=>{
     const userRef=ref(db,"blog");
 
     remove(ref(db,"blog/"+id))
+    Toastify("Kullanıcı bilgisi silindi")
    // Toastify("Kullanıcı bilgisi silindi")
 }
 export const  handleUpdateClick=(info)=>{
