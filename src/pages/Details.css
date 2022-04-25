@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
 .details-card{
 width:500px;
 height:500px;
@@ -14,5 +16,10 @@ margin:auto;
 .details-title{
     text-align: center;
     margin:30px ;
+    font-family: 'Girassol', cursive;
+    color: rgb(13,110,253);
+    font-size: 5rem;
+
+
 }
 

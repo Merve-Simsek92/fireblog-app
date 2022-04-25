@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
 .form-title{
     color:rgb(13, 110, 253);
     margin:auto;
     text-align: center;
+    font-family: 'Girassol', cursive;
 }
 .login-form{
     width: 40%;
@@ -17,5 +20,6 @@ width:100%
 .blok{
     width:40%;
     height: 60%;
-    margin-left: 170px;
+    display: block;
+    margin:auto;
 }

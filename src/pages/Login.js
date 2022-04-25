@@ -55,7 +55,7 @@ const Login = () => {
           </div>
           <input
             type="submit"
-            className="btn btn-primary form-control"
+            className="btn btn-primary form-control "
             value="Login"
             // onSubmit={handleSubmit}
           />
@@ -63,7 +63,7 @@ const Login = () => {
   </form>
 
   <button
-          className="btn btn-light form-control mt-4"
+          className="btn btn-light form-control mt-4 "
           onClick={handleProviderLogin}
         >
            with  <img src={logo}  alt="" style={{width: "100px"}} />

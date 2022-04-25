@@ -1,9 +1,9 @@
-.form-control{
+ .form-control-lg{
 width:50%;
 margin:auto;
-}
-.button{
+} 
+.newbutton{
     width:15%;
     margin:auto;
     display: block;
-}
+} 
