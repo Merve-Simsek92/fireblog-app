@@ -24,10 +24,11 @@ setIsOpen(true)
   return (
     <div>
 <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
-  <div className="container-fluid">
+  <div className="container-fluid d-flex space-around">
    <Link to={"/"} className="navbar-brand text-white">
    <img src={cw} alt="" style={{width:"50px"}} />
    </Link>
+   <h1></h1>
    {/* <button onClick={handleClick}> <Menuicon/> </button> */}
   {currentUser ?   (<Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">

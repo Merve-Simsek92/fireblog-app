@@ -21,7 +21,7 @@ const Login = () => {
       <div className="text-align-center">
         <div className="login-form">
           <img className="blok" src={blok} alt="" />
-          <h1 className="form-title display-3">Login</h1>
+          <h1 className="form-title display-3">── Login ──</h1>
           <form id="login" onSubmit={handleSubmit}>
             <div className="mb-3 p-4">
               <label htmlFor="email" className="form-label">

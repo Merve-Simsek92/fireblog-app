@@ -8,7 +8,7 @@ const Dashboard = () => {
   const {isLoading}=useFetch()
   return (
     <div>
-      <h1 className='dashboard'>Dashboard</h1>
+      <h1 className='dashboard'>──── Dashboard ────</h1>
   {/* //{!isLoading ? (<h1 className="dashboard">Dashboard</h1>) } */}
       <BlogCard/>
     </div>
