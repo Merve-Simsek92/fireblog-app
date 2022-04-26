@@ -21,7 +21,9 @@
 .text-align-center{
 background-image:url("https://picsum.photos/800/800");
 height: 100%;
-width:100%
+width:100%;
+background-size: cover;
+background-repeat: no-repeat;
 }
 .blok{
     width:40%;

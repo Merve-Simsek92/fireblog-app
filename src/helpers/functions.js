@@ -6,6 +6,7 @@ import {getDatabase, ref,set,push, onValue,update, remove} from "firebase/databa
 import { useBlogGlobalContext } from "../context/BlogContext"
 import { NavItem } from "react-bootstrap"
 import { navigate,useNavigate } from "react-router-dom";
+import { updateCurrentUser } from "firebase/auth";
 //bilgi ekleme
 //import Toastify from "./toast";
 export const AddBlog=(info)=>{
@@ -16,7 +17,9 @@ const date=new Date()
  set((newUserRef),{
      title:info.title,
      image:info.image,
-     content:info.content
+     content:info.content,
+     likes:0,
+     user:currentUser.email
 
  })
 }
