@@ -9,7 +9,7 @@ import { navigate,useNavigate } from "react-router-dom";
 //bilgi ekleme
 //import Toastify from "./toast";
 export const AddBlog=(info)=>{
-
+const date=new Date()
  const db=getDatabase()
  const userRef=ref(db,"blog");
  const newUserRef=push(userRef)
@@ -17,6 +17,7 @@ export const AddBlog=(info)=>{
      title:info.title,
      image:info.image,
      content:info.content
+
  })
 }
 //bilgi çağırma

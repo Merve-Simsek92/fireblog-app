@@ -32,7 +32,7 @@ const initialValues={title:item.title ,image:item.image,content:item.content}
 <input name='title' className="form-control form-control-lg mt-5" value={info.title} onChange={handleChange} type="text" placeholder="title*" aria-label=".form-control-lg example"/>
 <input name='image' className="form-control form-control-lg mt-3" value={info.image} onChange={handleChange}  type="text" placeholder="imageURL*" aria-label=".form-control-lg example"/>
 <textarea name='content'className="form-control form-control-lg mt-5"  id="exampleFormControlTextarea1" onChange={handleChange}  value={info.content}  placeholder='Content*' rows="7"/>
-<input class=" button btn btn-primary form-control-lg mt-3 mx-auto" type="submit" value="Update"/>
+<input class="newbutton button btn btn-primary form-control-lg mt-3 mx-auto" type="submit" value="Update"/>
    </form> 
 
 

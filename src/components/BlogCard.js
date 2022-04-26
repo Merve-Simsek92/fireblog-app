@@ -14,9 +14,10 @@ import "./BlogCard.css"
 
 
 const BlogCard = () => {
+  const date=new Date()
   const handlebutton=(e)=>{
     e.stopPropagation();
-     setSpan(span+1)
+    // setSpan(span+1)
   }
   const {currentUser}=useGlobalContext()
     const {isLoading,blogList}=useFetch()
@@ -45,6 +46,8 @@ const BlogCard = () => {
   <div className="card-body">
     <h5 className="card-title">{item.title}</h5>
     <p className="card-text">{item.content.substring(0,50)}...</p>
+    
+    <p>{date.toLocaleTimeString() }</p>
     <p><Menuicon/> <span> {currentUser.email}  </span></p>
     <p><span><button onClick={(e)=>handlebutton(e)}><Heart className='heart'/></button></span><span>{span}</span><Chat className='chat'/><span>0</span></p>
     
