@@ -33,7 +33,7 @@ const Details = () => {
  </div>
  <div>
  <button onClick={()=>handleUpdateClick({blogData})} type="button" class="btn btn-warning m-5">UPDATE</button>
- <button onClick={()=>handleDeleteClick(blogData.id)} type="button" class="btn btn-danger m-5">DELETE</button></div>
+ <button onClick={()=>handleDeleteClick(blogData.id, navigate)} type="button" class="btn btn-danger m-5">DELETE</button></div>
    </div>
   )
 }

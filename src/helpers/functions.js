@@ -45,8 +45,8 @@ useEffect(()=>{
 return {isLoading,blogList}
 }
 
-export  const handleDeleteClick=(id)=>{
-    const navigate=useNavigate()
+export  const handleDeleteClick=(id,navigate)=>{
+    // const navigate=useNavigate()
     const db=getDatabase()
     const userRef=ref(db,"blog");
 
@@ -58,7 +58,7 @@ export  const handleDeleteClick=(id)=>{
 export const  handleUpdateClick=(info)=>{
     const db=getDatabase();
     const updates={};
-    updates[ `blog/${info.id}`]=info;
+    updates[ "blog/"+ info.id]=info;
     return update(ref(db),updates)
 }
 

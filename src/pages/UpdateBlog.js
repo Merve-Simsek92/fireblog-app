@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import { AddBlog } from '../helpers/functions'
+import { AddBlog, handleUpdateClick } from '../helpers/functions'
 import { useNavigate } from 'react-router-dom'
 import "./NewBlog.css";
 const UpdateBlog = () => {
@@ -20,7 +20,7 @@ const initialValues={title:item.title ,image:item.image,content:item.content}
   }
   const handleFormSubmit=(e)=>{
   e.preventDefault()
-  AddBlog(info)
+  handleUpdateClick({...info, id:item.id})
   navigate("/")
   }
 
