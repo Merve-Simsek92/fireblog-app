@@ -17,7 +17,7 @@ const BlogCard = () => {
   const date=new Date()
   const handlebutton=(e)=>{
     e.stopPropagation();
-    // setSpan(span+1)
+    setSpan(span + 1)
   }
   const {currentUser}=useGlobalContext()
     const {isLoading,blogList}=useFetch()
@@ -49,7 +49,7 @@ const BlogCard = () => {
     
     <p>{date.toLocaleTimeString() }</p>
     <p><Menuicon/> <span> {currentUser.email}  </span></p>
-    <p><span><button onClick={(e)=>handlebutton(e)}><Heart className='heart'/></button></span><span>{span}</span><Chat className='chat'/><span>0</span></p>
+    <p><span><button onClick={(e)=>handlebutton(e)}><Heart className='heart'/></button></span><span>{item.likes}</span><Chat className='chat'/><span>0</span></p>
     
   </div>
 </div>

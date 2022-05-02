@@ -8,6 +8,7 @@ import { faBullseye } from '@fortawesome/free-solid-svg-icons'
 import { Dropdown } from 'react-bootstrap'
 import { useGlobalContext } from '../context/AppContext'
 import { logOut } from "../helpers/firebase";
+
 const Navbar = () => {
     const navigate=useNavigate()
  const [isOpen,setIsOpen]=useState()
@@ -28,7 +29,7 @@ setIsOpen(true)
    <Link to={"/"} className="navbar-brand text-white">
    <img src={cw} alt="" style={{width:"50px"}} />
    </Link>
-   <h1></h1>
+   <h1><i style={{color:"white",fontFamily:"Girassol', cursive"}}>{"<MERVE/>"}</i></h1>
    {/* <button onClick={handleClick}> <Menuicon/> </button> */}
   {currentUser ?   (<Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">

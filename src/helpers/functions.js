@@ -18,7 +18,7 @@ const date=new Date()
      title:info.title,
      image:info.image,
      content:info.content,
-    //  likes:0,
+      likes:0,
     //  user:currentUser.email
 
  })
