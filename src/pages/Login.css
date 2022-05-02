@@ -14,18 +14,21 @@
     margin:auto;
     background-color: white;
     padding: 40px;
-    
+    margin-top:10vh
 
     
 
 }
 .div-form{
-background-image:url("https://picsum.photos/800/800");
-background-repeat: no-repeat;
-background-size: cover;
-/* //object-fit: cover; */
-min-height: 100vh;
-
+    background-image: url("https://picsum.photos/1600/900");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
 }
 .text-align-center{
 width:100%;

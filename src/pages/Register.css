@@ -9,13 +9,15 @@
     color:rgb(13, 110, 253);
     margin:auto;
     text-align: center;
-    font-family: 'Girassol', cursive
+    font-family: 'Girassol', cursive;
+    font-size:60px;
 }
 .register-form{
     width: 40%;
     margin:auto;
     background-color: white;
-    height: 100%;
+    padding: 40px;
+    margin-top:10vh;
 
 }
 .text-align-center{
