@@ -5,6 +5,9 @@ width:500px;
 height:500px;
 margin:auto;
 
+}
+.card-text{
+    
 } 
 
 .heart{
@@ -18,8 +21,11 @@ margin:auto;
     margin:30px ;
     font-family: 'Girassol', cursive;
     color: rgb(13,110,253);
-    font-size: 5rem;
+    font-size: 4rem;
 
 
+}
+.card-title{
+color: rgb(13,110,253);   
 }
 

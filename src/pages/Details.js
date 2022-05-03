@@ -23,7 +23,7 @@ const Details = () => {
    }
   return (
 <div  className="details-card">
-        <h1 className='details-title'>DETAILS</h1>
+        <h1 className='details-title'>── DETAILS ──</h1>
    <img className='card-img-top' src={blogData?.image} alt="" />
    <div className="card-body">
     <h5 className="card-title">{blogData?.title}</h5>
