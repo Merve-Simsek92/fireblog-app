@@ -20,6 +20,7 @@ const date=new Date()
      content:info.content,
       likes:0,
     //  user:currentUser.email
+    date:(new Date()).toLocaleDateString()
 
  })
 }

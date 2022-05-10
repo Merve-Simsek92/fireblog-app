@@ -44,10 +44,9 @@ const BlogCard = () => {
 <div onClick={()=>handleClick({item})}  key={index} className="card">
   <img src={item.image} className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">{item.title}</h5>
+    <h5 className="card-title">{item.title.toUpperCase()}</h5>
     <p className="card-text">{item.content.substring(0,50)}...</p>
-    
-    <p>{date.toLocaleTimeString() }</p>
+     <p>{item.date}</p>
     <p><Menuicon/> <span> {currentUser.email}  </span></p>
     <p><span><button onClick={(e)=>handlebutton(e)}><Heart className='heart'/></button></span><span>{item.likes}</span><Chat className='chat'/><span>0</span></p>
     
