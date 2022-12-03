@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Merve-Simsek92/fireblog-app/static/css/main.d0ae032c.css",
-    "main.js": "/Merve-Simsek92/fireblog-app/static/js/main.b98c4e9e.js",
-    "static/js/787.beb3ab3b.chunk.js": "/Merve-Simsek92/fireblog-app/static/js/787.beb3ab3b.chunk.js",
-    "static/media/cw.jpeg": "/Merve-Simsek92/fireblog-app/static/media/cw.041cf5e8b9f405eff614.jpeg",
-    "static/media/loading.gif": "/Merve-Simsek92/fireblog-app/static/media/loading.91319f383c501449b182.gif",
-    "static/media/no-data.png": "/Merve-Simsek92/fireblog-app/static/media/no-data.a03fc88a5fe6d192b6a3.png",
-    "static/media/blok.png": "/Merve-Simsek92/fireblog-app/static/media/blok.7e6674a5bbc688626d09.png",
-    "static/media/google.png": "/Merve-Simsek92/fireblog-app/static/media/google.d1e31f45be7227c7b9e4.png",
-    "static/media/logo.svg": "/Merve-Simsek92/fireblog-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Merve-Simsek92/fireblog-app/index.html",
-    "static/media/heart.svg": "/Merve-Simsek92/fireblog-app/static/media/heart.01032e985250f2421f5b1da305620acf.svg",
-    "static/media/menu.svg": "/Merve-Simsek92/fireblog-app/static/media/menu.b987e009f2d3ba3993fc93478e22b55e.svg",
-    "static/media/chat.svg": "/Merve-Simsek92/fireblog-app/static/media/chat.1ae78e09986606e8921b079d88ad839e.svg",
-    "main.d0ae032c.css.map": "/Merve-Simsek92/fireblog-app/static/css/main.d0ae032c.css.map",
-    "main.b98c4e9e.js.map": "/Merve-Simsek92/fireblog-app/static/js/main.b98c4e9e.js.map",
-    "787.beb3ab3b.chunk.js.map": "/Merve-Simsek92/fireblog-app/static/js/787.beb3ab3b.chunk.js.map"
+    "main.css": "/fireblog-app/static/css/main.c4ccbdf6.css",
+    "main.js": "/fireblog-app/static/js/main.62e7d0d6.js",
+    "static/js/787.beb3ab3b.chunk.js": "/fireblog-app/static/js/787.beb3ab3b.chunk.js",
+    "static/media/cw.jpeg": "/fireblog-app/static/media/cw.041cf5e8b9f405eff614.jpeg",
+    "static/media/loading.gif": "/fireblog-app/static/media/loading.91319f383c501449b182.gif",
+    "static/media/no-data.png": "/fireblog-app/static/media/no-data.a03fc88a5fe6d192b6a3.png",
+    "static/media/blok.png": "/fireblog-app/static/media/blok.7e6674a5bbc688626d09.png",
+    "static/media/google.png": "/fireblog-app/static/media/google.d1e31f45be7227c7b9e4.png",
+    "static/media/logo.svg": "/fireblog-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/fireblog-app/index.html",
+    "static/media/heart.svg": "/fireblog-app/static/media/heart.01032e985250f2421f5b1da305620acf.svg",
+    "static/media/menu.svg": "/fireblog-app/static/media/menu.b987e009f2d3ba3993fc93478e22b55e.svg",
+    "static/media/chat.svg": "/fireblog-app/static/media/chat.1ae78e09986606e8921b079d88ad839e.svg",
+    "main.c4ccbdf6.css.map": "/fireblog-app/static/css/main.c4ccbdf6.css.map",
+    "main.62e7d0d6.js.map": "/fireblog-app/static/js/main.62e7d0d6.js.map",
+    "787.beb3ab3b.chunk.js.map": "/fireblog-app/static/js/787.beb3ab3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0ae032c.css",
-    "static/js/main.b98c4e9e.js"
+    "static/css/main.c4ccbdf6.css",
+    "static/js/main.62e7d0d6.js"
   ]
 }
