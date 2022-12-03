@@ -5,16 +5,19 @@ import {getAuth,signOut,GoogleAuthProvider, signInWithPopup, onAuthStateChanged,
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAAptle17ZRGPGjmLBUUxPJXkvv2U6PSyE",
-  authDomain: "blog-app-fe142.firebaseapp.com",
-  databaseURL: "https://blog-app-fe142-default-rtdb.firebaseio.com",
-  projectId: "blog-app-fe142",
-  storageBucket: "blog-app-fe142.appspot.com",
-  messagingSenderId: "357403443830",
-  appId: "1:357403443830:web:9af21b8179012b2dd7d557"
+  apiKey: "AIzaSyCWMdx0QZm7ohX4QND6pWo6qSknHAOjCbQ",
+  authDomain: "fireblog-46fa4.firebaseapp.com",
+  projectId: "fireblog-46fa4",
+  storageBucket: "fireblog-46fa4.appspot.com",
+  messagingSenderId: "250304885190",
+  appId: "1:250304885190:web:919de5bf5f0ec7ec0682c7"
 };
+
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
